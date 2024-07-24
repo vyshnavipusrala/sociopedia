@@ -1,0 +1,82 @@
+/* Sidebar.css */
+.sidebar {
+  flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: auto; /* Use 'auto' instead of 'scroll' for better UX */
+  position: sticky;
+  top: 50px;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer; /* Add cursor pointer for interactive items */
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+}
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+  transition: all 0.3s ease; /* Example transition effect */
+}
+
+.sidebarLink:hover {
+  color: #1877f2; /* Example hover color */
+}
+
+.sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #1877f2; /* Example background color */
+  color: white; /* Example text color */
+  cursor: pointer;
+}
+
+.sidebarHr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #d3d3d3; /* Example border color */
+}
+
+.sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarFriend {
+  display: flex;
+  align-items: center;
+  padding: 8px 0; /* Adjust padding for better spacing */
+}
+
+.sidebarFriendImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px; /* Adjust margin for better spacing */
+}
+
+.sidebarFriendName {
+  font-size: 14px; /* Example font size */
+  font-weight: 500; /* Example font weight */
+}

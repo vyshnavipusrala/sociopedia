@@ -1,0 +1,119 @@
+.topbarContainer {
+    height: 50px;
+    width: 100%;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999; /*ensures that the top bar stays on top of other elements when the user scrolls, maintaining its visibility and usability.*/
+  }
+  
+  .topbarLeft {
+    flex: 3; /* left part is 3 part*/
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .topbarCenter {
+    flex: 5; /* center part is 5 parts*/
+  }
+  
+  .searchbar {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchIcon {
+    font-size: 20px !important; /* as icon is material ui icon to apply styles we need to enter !important*/
+    margin-left: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    width: 70%;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+
+  /*right part is 4 parts*/
+  
+  .topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .topbarIcons {
+    display: flex;
+  }
+  
+  .topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .topbarUser{
+    display: flex;
+    align-items: center;
+  }
+ 
+  .topbarImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:5px;
+    cursor: pointer;/*ensures that the image fills the circular area completely while maintaining its aspect ratio*/
+  }
+  .topbarLogoutButton {
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 5px;
+   
+    transition: background-color 0.3s ease;
+  }
+  
+  .topbarLogoutButton:hover {
+    background-color: #f0f0f0;
+  }
